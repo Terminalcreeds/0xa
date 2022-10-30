@@ -1,5 +1,5 @@
 <?php
-define('BOT_TOKEN', '1981029592:AAGDpGA9sjUz0a3LPcVVhIGd2Ahv_E45i5s');
+define('BOT_TOKEN', '');
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 define("DATABASE", "termina1_new");
 define("USERNAME", "termina1_new");
@@ -8,7 +8,7 @@ define("LOCALHOST", "localhost:3306");
 $ketnoi = mysqli_connect(LOCALHOST,USERNAME,PASSWORD,DATABASE);
 mysqli_query($ketnoi,"set names 'utf8'");
 date_default_timezone_set('Asia/Ho_Chi_Minh');
-$BOT_TOKEN = "1981029592:AAGDpGA9sjUz0a3LPcVVhIGd2Ahv_E45i5s";
+$BOT_TOKEN = "";
 $pattern = '/[0-9]/';
 $update = file_get_contents('php://input');
 $update = json_decode($update, true);
